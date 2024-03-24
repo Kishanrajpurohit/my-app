@@ -75,7 +75,7 @@ export default function Home() {
   const [searchItem, setSearchItem] = useState("");
   const [filteredUsers, setFilteredUsers] = useState(customers);
 
-  const onSubmit = async (data) => {
+  const onSubmit = async (data: any) => {
     console.log(firstName);
 
     const res = await fetch(
@@ -98,7 +98,7 @@ export default function Home() {
       
   }, []);
 
-  function handleSearch(e) {
+  function handleSearch(e: { target: { value: any; }; }) {
     const searchTerm = e.target.value;
     setSearchItem(searchTerm);
 

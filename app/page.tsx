@@ -19,7 +19,7 @@ export default function Home() {
   } = useForm();
   const toast = useToast()
 
-  const onSubmit = async (data) => {
+  const onSubmit = async (data: any) => {
     const res = await fetch('http://localhost:3000/api/customers',{
         method: 'POST',
         body: JSON.stringify(data),
