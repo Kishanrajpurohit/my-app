@@ -70,7 +70,7 @@ export default function Home() {
   const initialRef = React.useRef(null);
   const finalRef = React.useRef(null);
 
-  const [customers, setcustomers] = useState([]);
+  const [customers, setcustomers] = useState<any[]>([]);
   const [firstName, setFirstName] = useState("");
   const [searchItem, setSearchItem] = useState("");
   const [filteredUsers, setFilteredUsers] = useState(customers);
