@@ -33,7 +33,7 @@ export default function Home() {
     <>
       <form
         onSubmit={handleSubmit(onSubmit)}
-        className="w-screen h-screen flex-col items-center ml-12 mt-5"
+        className="flex-col items-center ml-12 mt-5 sm:ml-12"
       >
         <Box className="w-96 sm:w-72">
           <Input
