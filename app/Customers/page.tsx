@@ -112,7 +112,7 @@ export default function Home() {
   return (
     <>
       <div className="w-screen flex justify-center">
-        <Box className="w-96">
+        <Box className="w-96 sm:w-72">
           <Input
             placeholder="Search the customers"
             size="sm"
@@ -176,9 +176,9 @@ export default function Home() {
           <ModalBody pb={16}>
             <form
               onSubmit={handleSubmit(onSubmit)}
-              className="w-screen  flex-col items-center ml-4 mt-5"
+              className="flex-col items-center ml-4 mt-5"
             >
-              <Box className="w-96">
+              <Box className="w-96 sm:w-72">
                 <Input
                   placeholder="Customer Name"
                   size="sm"
@@ -190,7 +190,7 @@ export default function Home() {
                   })}
                 />
               </Box>
-              <Box className="w-96 ">
+              <Box className="w-96 sm:w-72">
                 <Input
                   placeholder="Mobile Number"
                   size="sm"
@@ -202,7 +202,7 @@ export default function Home() {
                   })}
                 />
               </Box>
-              <Box className="w-96 ">
+              <Box className="w-96 sm:w-72">
                 <Select
                   placeholder="Device Name"
                   size="sm"
@@ -216,7 +216,7 @@ export default function Home() {
                   <option value="Printer">Printer</option>
                 </Select>
               </Box>
-              <Box className="w-96">
+              <Box className="w-96 sm:w-72">
                 <Textarea
                   placeholder="Type the problem of the device"
                   className="w-96 mt-2"
@@ -227,14 +227,14 @@ export default function Home() {
                   })}
                 />
               </Box>
-              <Box className=" ">
+              <Box className="">
                 <Button
                   type="submit"
                   colorScheme="messenger"
                   size="sm"
-                  className="w-96 mt-2"
+                  className="w-96 sm:w-72 mt-2"
                 >
-                  Add Customer
+                  Edit Customer
                 </Button>
               </Box>
             </form>
