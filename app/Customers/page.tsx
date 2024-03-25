@@ -79,7 +79,7 @@ export default function Home() {
     console.log(firstName);
 
     const res = await fetch(
-      "http://localhost:3000/api/editcustomer/" + firstName,
+      "https://my-app-six-theta-68.vercel.app/editcustomer/" + firstName,
       {
         method: "PATCH",
         body: JSON.stringify(data),
@@ -91,7 +91,7 @@ export default function Home() {
   };
 
   useEffect(() => {
-    fetch("http://localhost:3000/api/getcustomer")
+    fetch("https://my-app-six-theta-68.vercel.app/api/getcustomer")
       .then((response) => response.json())
       .then((json) => setcustomers(json))
       .catch((error) => console.error(error));

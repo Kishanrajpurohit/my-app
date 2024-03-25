@@ -20,7 +20,7 @@ export default function Home() {
   const toast = useToast()
 
   const onSubmit = async (data: any) => {
-    const res = await fetch('http://localhost:3000/api/customers',{
+    const res = await fetch('https://my-app-six-theta-68.vercel.app/api/customers',{
         method: 'POST',
         body: JSON.stringify(data),
         headers: {
