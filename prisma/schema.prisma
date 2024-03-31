@@ -16,4 +16,5 @@ model customers {
   mobilenumber String
   devicename String
   problem   String
+  status    String
 }
