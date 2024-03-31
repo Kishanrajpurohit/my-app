@@ -143,7 +143,7 @@ export default function Home() {
               <TableCell>{customer.devicename}</TableCell>
               <TableCell className="">{customer.problem}</TableCell>
               <TableCell>
-                <Badge colorScheme="green">completed</Badge>
+                <Badge colorScheme="green">{customer.status}</Badge>
               </TableCell>
               <TableCell className="">
                 <Button
