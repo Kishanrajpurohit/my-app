@@ -79,7 +79,7 @@ export default function Home() {
     console.log(firstName);
 
     const res = await fetch(
-      "https://my-app-six-theta-68.vercel.app/editcustomer/" + firstName,
+      "https://my-app-six-theta-68.vercel.app/api/editcustomer/" + firstName,
       {
         method: "PATCH",
         body: JSON.stringify(data),
