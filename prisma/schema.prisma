@@ -11,7 +11,7 @@ datasource db {
 }
 model customers {
   id Int @id @default(autoincrement())
-  inwardno String
+ 
   customername String
   mobilenumber String
   devicename String
